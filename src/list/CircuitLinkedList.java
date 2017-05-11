@@ -1,7 +1,6 @@
 package list;
 
 
-
 public class CircuitLinkedList<E> implements List<E> {
 	
 	private int size=0;
@@ -121,5 +120,11 @@ public class CircuitLinkedList<E> implements List<E> {
 			this.next = next;
 		}
 	}
+	@Override
+	public list.Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 
 }

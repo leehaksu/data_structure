@@ -9,9 +9,5 @@ public interface List <E> {
 	void removeAll();
 	int size();
 	Object [] toArray();
-	
-	
-	
-	
-
+	Iterator <E> iterator();
 }

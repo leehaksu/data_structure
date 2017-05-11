@@ -1,5 +1,6 @@
 package list;
 
+
 public class ArrayList<E> implements List<E> {
 	private static final int INIT_CAPACITY=10;
 	private int size;
@@ -87,5 +88,31 @@ public class ArrayList<E> implements List<E> {
 		}*/
 		return arr;
 	}
+	
+
+	@Override
+	public list.Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		
+		
+		return new list.Iterator<E>(){
+			
+			private int index=0;
+
+			@Override
+			public boolean hasNext() {
+				// TODO Auto-generated method stub
+				return index<size;
+			}
+
+			@Override
+			public E next() {
+				// TODO Auto-generated method stub
+				return data[index++];
+			}
+			
+		};
+	}
+
 
 }

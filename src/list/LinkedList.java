@@ -117,4 +117,11 @@ public class LinkedList<E> implements List<E> {
 		return arr;
 	}
 
+	@Override
+	public list.Iterator<E> iterator() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 }

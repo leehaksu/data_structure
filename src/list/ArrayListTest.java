@@ -22,6 +22,20 @@ public class ArrayListTest {
 		{
 			System.out.println(i+"번째 항목 : "+list.get(i));
 		}
+		
+		//foreach문을 사용하기 위한 컬렉션 객체는 java.lang.iterable 인터페이스를 구현 해야 한다.
+		/*for(Integer i : list)
+		{
+			System.out.println(i+"번째 항목 : "+list.get(i));
+		}*/
+		
+		//Iterator 반복자를 통한 리스트 순회
+		Iterator <Integer> it = list.iterator();
+		while(it.hasNext())
+		{
+			int i=it.next();
+			System.out.println(i);
+		}
 		//removeAll 테스트
 		list.removeAll();
 		
