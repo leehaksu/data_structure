@@ -74,4 +74,18 @@ public class ArrayList<E> implements List<E> {
 		return size;
 	}
 
+	@Override
+	public Object[] toArray() {
+		// TODO Auto-generated method stub
+		Object[] arr = new Object[size];
+		//Node <E> x = head;
+		int index=0;
+	/*	while(x!=null)
+		{
+			arr[index++]=x.data;
+			x=x.next;
+		}*/
+		return arr;
+	}
+
 }

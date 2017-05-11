@@ -8,6 +8,7 @@ public interface List <E> {
 	E remove(int index,E elements);
 	void removeAll();
 	int size();
+	Object [] toArray();
 	
 	
 	
